@@ -57,13 +57,14 @@ echo "$QQ++$QQ++$QQ"
 if [ $j = $k ]; then   #Troche to ma³o eleganckie rozwi¹zanie, gdy¿ trzeba za ka¿dym razem wstawiaæ nowe warunki, ale nie wiemda siê ³adniej. W³aœciwie to mo¿na by teoretycznie zrobiæ zmienne tablicowe, przypisaæ wygrane i zrobiæ listê...
 	if [ $k = $l ]; then
 		if [ $k = 0 ]; then
-		echo WYGRALES 
+		echo WYGRALES 1
 		elif [ $k = 1 ]; then
-		echo noz
+		echo WYGRALES 2
 		elif [ $k = 2 ]; then
-		echo kroa
+		echo WYGRALES 3
 		else 
-		echo WON
+		echo WYGRALES COS INNEGO
 		fi
+	elif 	
 	fi	
 fi
