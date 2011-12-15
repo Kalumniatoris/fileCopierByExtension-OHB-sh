@@ -58,14 +58,12 @@ if [ $j = $k ]; then   #Troche to ma³o eleganckie rozwi¹zanie, gdy¿ trzeba za ka
 	if [ $k = $l ]; then
 		if [ $k = 0 ]; then
 		echo WYGRALES 
-		else if [ $k = 1 ]; then
+		elif [ $k = 1 ]; then
 		echo noz
-		else if [ $k = 2 ]; then
+		elif [ $k = 2 ]; then
 		echo kroa
 		else 
 		echo WON
 		fi
 	fi	
 fi
-
-{}
