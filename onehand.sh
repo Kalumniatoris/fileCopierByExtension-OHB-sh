@@ -1,70 +1,70 @@
 #!/bin/bash
-#Alt 0160 w windowsie dla t spacji,  nie uï¿½ywaï¿½ zwykï¿½ych spacji, (przynajmniej mï¿½j komputer je skraca, najlepiej wpisaï¿½ zwykï¿½ymi a potem zastï¿½piï¿½ twardymi) W jakim celu ja piszï¿½ te komentarze? 
-A[0]='ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½' ## $%^&^% znaleÅºÄ‡ coÅ› innego, ï¿½ siÄ™ nie wyÅ›wietla prawidÅ‚owo ani na gicie ani na sigmie przez putty
-A[1]='ï¿½/------\ï¿½'
-A[2]='ï¿½|ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½|ï¿½'
-A[3]='ï¿½|ï¿½/--\ï¿½|ï¿½'
-A[4]='ï¿½|ï¿½|ï¿½ï¿½|ï¿½|ï¿½'
-A[5]='ï¿½|ï¿½|--|ï¿½|ï¿½'
-A[6]='ï¿½|ï¿½|ï¿½ï¿½|ï¿½|ï¿½'
-A[7]='ï¿½|ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½|ï¿½'
-A[8]='ï¿½\------/ï¿½'
+#Alt 0160 w windowsie dla t spacji,  nie u ywa  zwyk ych spacji, (przynajmniej m j komputer je skraca, najlepiej wpisa  zwyk ymi a potem zast pi  twardymi) W jakim celu ja pisz  te komentarze? 
+A[0]='          ' ## $%^&^% znaleÅºÄ‡ coÅ› innego,   siÄ™ nie wyÅ›wietla prawidÅ‚owo ani na gicie ani na sigmie przez putty
+A[1]=' /------\ '
+A[2]=' |      | '
+A[3]=' | /--\ | '
+A[4]=' | |  | | '
+A[5]=' | |--| | '
+A[6]=' | |  | | '
+A[7]=' |      | '
+A[8]=' \------/ '
 A[9]='__________'
 
-A[10]='ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½'
-A[11]='ï¿½AAAAAAï¿½ï¿½ï¿½'
-A[12]='ï¿½Aï¿½ï¿½ï¿½ï¿½Aï¿½ï¿½ï¿½'
-A[13]='ï¿½Aï¿½ï¿½ï¿½ï¿½Aï¿½ï¿½ï¿½'
-A[14]='ï¿½Aï¿½ï¿½ï¿½Aï¿½ï¿½ï¿½ï¿½'
-A[15]='ï¿½ï¿½Aï¿½ï¿½Aï¿½ï¿½ï¿½ï¿½'
-A[16]='ï¿½Aï¿½ï¿½ï¿½Aï¿½ï¿½ï¿½ï¿½'
-A[17]='ï¿½Aï¿½ï¿½ï¿½ï¿½Aï¿½ï¿½ï¿½'
-A[18]='ï¿½AAAAAAï¿½ï¿½ï¿½'
+A[10]='          '
+A[11]=' AAAAAA   '
+A[12]=' A    A   '
+A[13]=' A    A   '
+A[14]=' A   A    '
+A[15]='  A  A    '
+A[16]=' A   A    '
+A[17]=' A    A   '
+A[18]=' AAAAAA   '
 A[19]='__________'
 
-A[20]='+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½'
-A[21]='-______ï¿½ï¿½ï¿½'
-A[22]='+______ï¿½ï¿½ï¿½'
-A[23]='-______ï¿½ï¿½ï¿½'
-A[24]='+_____ï¿½ï¿½ï¿½ï¿½'
-A[25]='-_____ï¿½ï¿½ï¿½ï¿½'
-A[26]='+_____ï¿½ï¿½ï¿½ï¿½'
-A[27]='-______ï¿½ï¿½ï¿½'
-A[28]='+______ï¿½ï¿½ï¿½'
+A[20]='+         '
+A[21]='-______   '
+A[22]='+______   '
+A[23]='-______   '
+A[24]='+_____    '
+A[25]='-_____    '
+A[26]='+_____    '
+A[27]='-______   '
+A[28]='+______   '
 A[29]='__________'
 
-# Jak widaï¿½ nie znam siï¿½ na robieniu ASCII ART, kod wymaga by grafiki miaï¿½y 10 linijek numerowanych od 0 do 9 powiï¿½kszonych o indeks 
+# Jak wida  nie znam si  na robieniu ASCII ART, kod wymaga by grafiki mia y 10 linijek numerowanych od 0 do 9 powi kszonych o indeks 
 
 QQ='----------'
 AB="A11"
-i=3 #liczba elementï¿½w do kaï¿½dego pola, w przypadku dodania kolejnych oczywiï¿½cie zwiï¿½kszyï¿½.
+i=3 #liczba element w do ka dego pola, w przypadku dodania kolejnych oczywi cie zwi kszy .
 q=$(( $RANDOM % $i ))
 w=$(( $RANDOM % $i ))
 e=$(( $RANDOM % $i ))
 y=0
-while [ $y -le  9 ]; do #pï¿½tla sï¿½uï¿½y do wyï¿½wietlenia wszystkich liï¿½ grafik, 
+while [ $y -le  9 ]; do #p tla s u y do wy wietlenia wszystkich li  grafik, 
 # 
 let j=$q*10+$y
 let k=$w*10+$y
 let l=$e*10+$y
 
-echo "${A[$j]}||${A[$k]}||${A[$l]}" #wyï¿½wietlenie
+echo "${A[$j]}||${A[$k]}||${A[$l]}" #wy wietlenie
 
 y=$[y + 1]
 done
 echo "$QQ++$QQ++$QQ"
 
-if [ $j = $k ]; then   #Troche to maï¿½o eleganckie rozwiï¿½zanie, gdyï¿½ trzeba za kaï¿½dym razem wstawiaï¿½ nowe warunki, ale nie wiemda siï¿½ ï¿½adniej. Wï¿½aï¿½ciwie to moï¿½na by teoretycznie zrobiï¿½ zmienne tablicowe, przypisaï¿½ wygrane i zrobiï¿½ listï¿½...
+if [ $j = $k ]; then   #Troche to ma o eleganckie rozwi zanie, gdy  trzeba za ka dym razem wstawia  nowe warunki, ale nie wiemda si   adniej. W a ciwie to mo na by teoretycznie zrobi  zmienne tablicowe, przypisa  wygrane i zrobi  list ...
 	if [ $k = $l ]; then
-		if [ $k = 0 ]; then
+		if [ $q = 0 ]; then
 		echo WYGRALES 1
-		elif [ $k = 1 ]; then
+		elif [ $q = 1 ]; then
 		echo WYGRALES 2
-		elif [ $k = 2 ]; then
+		elif [ $q = 2 ]; then
 		echo WYGRALES 3
 		else 
 		echo WYGRALES COS INNEGO
 		fi
-	elif 	
-	fi	
+	#elif
+	fi
 fi
