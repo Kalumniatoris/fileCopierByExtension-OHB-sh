@@ -1,4 +1,9 @@
 #!/bin/bash
+if [ $# -ne 2 ]; then
+	echo "Skrypt nalezy uruchomiæ z dwoma parametrami, pierwszym jest szukane rozszerzenie, drugim jest nazwa folderu, do ktorego sa kopiowane"
+else
+	
+
 echo "Chcesz skopiowaæ wszystkie pliki z rozszerzeniem $1 do folderu $2"\
 
 if [ -d $2 ]; then
@@ -36,6 +41,8 @@ gdzie=`head tmpdes.roz -n 1`
 done
 rm tmpsrc.roz
 rm tmpdes.roz
+rm tmp.roz
+fi
 
 
 

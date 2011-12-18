@@ -56,15 +56,6 @@ echo "$QQ++$QQ++$QQ"
 
 if [ $j = $k ]; then   #Troche to ma o eleganckie rozwi zanie, gdy  trzeba za ka dym razem wstawia  nowe warunki, ale nie wiemda si   adniej. W a ciwie to mo na by teoretycznie zrobi  zmienne tablicowe, przypisa  wygrane i zrobi  list ...
 	if [ $k = $l ]; then
-		if [ $q = 0 ]; then
-		echo WYGRALES 1
-		elif [ $q = 1 ]; then
-		echo WYGRALES 2
-		elif [ $q = 2 ]; then
-		echo WYGRALES 3
-		else 
-		echo WYGRALES COS INNEGO
-		fi
-	#elif
+		echo "Udalo sie ci wylosowac trzy identyczne, i co z tego?"	
 	fi
 fi
