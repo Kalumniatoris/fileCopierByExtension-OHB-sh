@@ -1,5 +1,10 @@
-<<<<<<< HEAD
-Skrypty w pow�oce basha
+
+Skrypty w bashu
 =======
-Prosta wersja gry hazardowej na podstawie jednorękiego bandyty
->>>>>>> df4d11ded647bfd39e3a3abcf346df33b25302cc
+
+onehand.sh Prosta wersja gry hazardowej na podstawie jednorękiego bandyty, na razie bez pieniędzy.
+
+kap.sh Skrypt kopiujący pliki z wybranym rozszerzeniem do folderu o wybranej nazwie z zachowaniem struktury folderów. 
+Zaleca się zaliasowanie skryptu.
+
+
