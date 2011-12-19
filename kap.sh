@@ -1,13 +1,13 @@
 #!/bin/bash
 if [ $# -ne 2 ]; then
-	echo "Skrypt nalezy uruchomiæ z dwoma parametrami, pierwszym jest szukane rozszerzenie, drugim jest nazwa folderu, do ktorego sa kopiowane"
+	echo "Skrypt nalezy uruchomic z dwoma parametrami, pierwszym jest szukane rozszerzenie, drugim jest nazwa folderu, do ktorego sa kopiowane"
 else
 	
 
-echo "Chcesz skopiowaæ wszystkie pliki z rozszerzeniem $1 do folderu $2"\
+echo "Chcesz skopiowac wszystkie pliki z rozszerzeniem $1 do folderu $2"\
 
 if [ -d "$2" ]; then
-	echo folder nie jest tworzony gdy¿ istnieje
+	echo folder nie jest tworzony gdyc istnieje
 	else
 	mkdir "$2"
 fi
