@@ -38,12 +38,14 @@ QQ='----------'
 money=100
 
 i=3 #liczba element�w do ka�dego pola, w przypadku dodania kolejnych oczywi�cie zwi�kszy�.
+while [ $money -gt 0 ]; do
+
 q=$(( $RANDOM % $i ))
 w=$(( $RANDOM % $i ))
 e=$(( $RANDOM % $i ))
 y=0
 
-while [ $money -gt 0 ]; do
+
 let money=$money-1
 while [ $y -le  9 ]; do #p�tla s�u�y do wy�wietlenia wszystkich li� grafik, 
 # 
